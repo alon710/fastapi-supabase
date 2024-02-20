@@ -1,8 +1,9 @@
-from fastapi import FastAPI
-from dotenv import load_dotenv
 import os
-from fastapi.responses import RedirectResponse
+
 import uvicorn
+from dotenv import load_dotenv
+from fastapi import FastAPI
+from fastapi.responses import RedirectResponse
 
 load_dotenv()
 
