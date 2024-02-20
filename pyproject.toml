@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "fastapi-supabase"
+version = "0.1.0"
+description = "Fastapi & Supabase template"
+authors = ["Alon Barad <Alon710@gmail.com>"]
+readme = "README.md"
+packages = [{include = "app"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.109.2"
+python-dotenv = "^1.0.1"
+uvicorn = "^0.27.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.6.2"
+pytest = "^8.0.1"
+pytest-parallel = "^0.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
