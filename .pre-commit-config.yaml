@@ -38,6 +38,7 @@ repos:
     hooks:
       - id: detect-secrets
         name: detect-secrets
+        args: ["--exclude-files", ".env.example"]
 
   - repo: https://github.com/crate-ci/typos
     rev: v1.18.2
